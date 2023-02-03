@@ -13,8 +13,8 @@ public class Connexion {
     public Connection getConnection() throws Exception
     {
          Class.forName("org.postgresql.Driver");
-         //Connection con=DriverManager.getConnection("jdbc:postgresql://postgresql-dranadison.alwaysdata.net:5432/dranadison_enchere","dranadison","alwaysdata12");
-         Connection con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/enchereweb","postgres","root");
+         Connection con=DriverManager.getConnection("jdbc:postgresql://postgresql-dranadison.alwaysdata.net:5432/dranadison_enchere","dranadison","alwaysdata12");
+         //Connection con=DriverManager.getConnection("jdbc:postgresql://localhost:5432/enchereweb","postgres","root");
          return con;
     }
 }
