@@ -193,7 +193,7 @@ public class TpSpringApplication {
     }
     @CrossOrigin @GetMapping("/photos")
     public Object getphotos(@RequestParam(value = "idEnchere") String idEnchere) throws Exception {
-        DBTable[] tab=new Photo().recherche();
+        DBTable[] tab=new Photo().recherche(idEnchere);
         try{
             return new Data(tab);
         }

@@ -48,7 +48,7 @@ public class Photo extends DBTable{
         c.close();
        }
 
-    public DBTable[] recherche() throws Exception {
+    public DBTable[] recherche(String enchere) throws Exception {
         Connection c=new Connexion().getConnection();
         DBTable[] tab=this.find("select * from photo where idEnchere="+idEnchere,c);
         c.close();
